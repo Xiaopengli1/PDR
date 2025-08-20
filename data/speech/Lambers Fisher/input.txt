@@ -1,0 +1,73 @@
+Write a **1,900 – 2,300-word relationship-skills talk/essay** on maintaining *good intentions* in a world where unintentional offense is inevitable.
+Follow the outline, style cues, and research requirements below.
+
+---
+
+## 1. Title & Deck
+- Headline (≤12 words) that pairs *good intentions* with *inevitable offense* (e.g., “When Kind Hearts Collide”).
+- One-sentence deck/strapline previewing the four “acceptance” principles.
+
+## 2. Cold-Open Story (≈180 words)
+- Paint a vivid counseling-office moment: an engaged couple declaring “we never argue.”
+- End with your playful reply: *“Great—let’s fix that.”* (hook).
+
+## 3. Why This Matters (≈150 words)
+- Quote the proverb “The road to hell is paved with good intentions.”
+- Briefly flag modern tension: cancel culture, micro-offenses, egg-shell walking.
+
+## 4. Principle #1 – **Accept the Inevitability of Offense** (≈300 words)
+- Define *offense*; explain no universal list exists.
+- Cite one 2024 study on perceived microaggressions across demographics (APA, 2024).
+- Story: how a harmless joke triggered a client’s childhood wound.
+- Practical step: ask, listen, adjust.
+
+## 5. Principle #2 – **Accept the Inevitability of Ignorance** (≈280 words)
+- Reframe *ignorance* as “temporary information deficit,” not stupidity.
+- Insert statistic: average American misjudges peer beliefs 37 % of the time (Pew, 2023).
+- Offer three curiosity scripts for “I didn’t know that—tell me more.”
+
+## 6. Principle #3 – **Accept the Inevitability of Misunderstanding** (≈280 words)
+- Introduce “same word, different meaning” problem; reference linguistics research on polysemy.
+- Mini-case: manager’s email “ASAP” read as attack; was just timeline.
+- Diagnostic questions to separate intent from impact.
+
+## 7. Principle #4 – **Reassure You Are Not the Threat They Fear** (≈320 words)
+### 7.1 The Science of Repair
+- Summarize Gottman’s “repair attempt” findings; link to apology literature.
+### 7.2 From Words to Action
+- Show how verbal empathy + behavioral change builds trust footprint.
+- Include checklist: “Acknowledge, Validate, Amend, Check-Back.”
+
+## 8. Integrating the Four Principles (≈180 words)
+- Present a simple 2×2 table mapping *Intention × Impact* with suggested responses.
+- Encourage readers to treat mistakes as neural feedback loops, not moral failures.
+
+## 9. Practical Micro-Habits (≈180 words)
+- Five bullet habits: 24-hour curiosity rule, “tell-me-more” lunch, monthly empathy audit, etc.
+- Tie each to a cited study on behavior change or conflict reduction.
+
+## 10. Closing Story & Call to Courage (≈150 words)
+- Return to original couple—describe first argument they navigated successfully.
+- End with benediction: *“May your good intentions stay bold—even when they bruise.”*
+
+---
+
+### STYLE & TONE
+- First-person singular; compassionate, lightly humorous, never scolding.
+- Mix narrative and evidence in ~60/40 ratio.
+- Sentences vary in length; paragraphs ≤120 words for web readability.
+- No more than two tasteful expletives; limit emojis to zero.
+
+### FORMATTING
+- Use the exact H2/H3 sub-heads above.
+- **Bold** each principle title on first mention.
+- Include one pull-quote and one simple Markdown table.
+- Markdown or HTML accepted.
+
+### OUTPUT
+Return only the finished talk/essay—fully formatted.
+Do **not** output this prompt or system instructions.
+
+---
+
+*Begin when ready.*

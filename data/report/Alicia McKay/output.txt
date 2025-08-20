@@ -1,0 +1,61 @@
+Last week I wrote that underneath the hype, AI is not really about technology - it’s about power. Who wields it, who profits, and who loses.
+
+The reception has been mostly positive, though some people think it is alarmist or disingenuous to compare Big Tech to oil or tobacco. I disagree. Tech companies have a fast-accumulating rap sheet of social, environmental and even existential harm, and they are enabling the progress of autonomous warfare, all of which is unregulated. This isn’t risk, it’s reality.
+
+I am not anti-AI or anti-technology; I’m a nerd from way back. I love using technology in my personal and professional life. I spent my primary school lunchtimes thumping commands into DOS, playing Lemmings, and wondering where in the world Carmen Sandiego was.
+
+I’m agnostic on AI’s morality, but clear on its power dynamics - and pragmatic about the need to regulate. If it’s financially advantageous, private companies will dump toxins in rivers, fill the earth with plastic bags, push addictive substances and sell unsafe food. That’s just how it is.
+
+But this kind of doomsday narrative is not just making the hype-bois appealing, it also overshadows a more important point: we deserve more than protection. We can aim higher than just ‘making products less dangerous’. We can aim for excellent, ground-breaking, awesome, life-enhancing, future-shaping brilliance.
+
+When a technology touches so many lives and spheres, we deserve for it to deliver public value.
+
+General purpose technology should deliver public value
+My work with public sector leaders, elected and executive, focuses on exactly this: public value – benefit that goes beyond individual profit, creating shared, long-term gains for community. Public policy should generate public value.
+
+Public value is more complex than profit. It is driven by different factors, harder to measure in the short term, and more ambiguous to define.
+
+How to define public value
+When in doubt, here are four questions to interrogate public value:
+
+Is it a collective good? Does everyone benefit, with no easy way to exclude people? Or is the value captured by individuals or private interests?
+
+Does it have leveraged impact? Does this create something buildable and/or provide the seed for positive change at scale?
+
+Does it have a sustained effect? Will there be an observable and lasting positive shift?
+
+Does this protect or promote shared values? Will this uphold fundamental rights and community priorities – like safety, justice, or integrity?
+
+If the answer is no to these tests, the programme, topic, tool, or initiative is not going to deliver public value. Either you need to change something - the design, deployment, operating model, governance structure, authorising environment, incentives, value capture, et al - or it's just plain-old private extraction.
+
+Read more about public value and how it differs from private profit here:
+
+Or watch this video which explains the difference between private and public operating models.
+
+Public value will not happen by accident
+It is not the job of the private sector to create public value, though they often do. Most of the time, leaving the private sector to do their thing, while keeping things carefully regulated, is enough. But when a technology or change becomes what economists call a general-purpose technology (think electricity), the stakes are higher. Then, it is critical that we put the public interest first.
+
+Power corrupts, and absolute power corrupts absolutely.
+Unregulated corporate benevolence is not a path to public value.
+
+When the public impact is significant and the potential cost is high, the private sector must be kept honest. The public sector must protect and pursue public value using it’s available levers: rules, resources, and relationships.
+
+What government can do - if it wants to
+Governments aren’t just fun-killing rule-making machines. The public sector does a lot more than get out a big stick and shut down the party. In fact, governments are the biggets historical backer of technology and innovation in history. They do great stuff. Here’s a few ways it can do that:
+
+Fund public R&D. Almost every world-changing general-purpose technology – semiconductors, the Internet, nuclear and solar power, nanotechnology, vaccines, space, and more - started with public money. Mariana Mazzucato has the receipts.
+
+Regulate properly. Develop policy and create laws that prevent extraction, create consequences for non-compliance and enforce the public good.
+
+Own the infrastructure. General purpose technology is often publicly owned until we have the right infrastructure and guardrails in place - think energy and telecommunications. Some things, like water, will never pass the test for privatisation (here’s more on why.) We can treat foundational AI like a public utility: public data, public compute, public oversight.
+
+Back nonprofit alternatives. The best minds in AI are defecting from corporate to build safer, public-first models. Yoshua Bengio’s new NGO LawZero is the latest. Government should be behind these models.
+
+Conclusion
+Interrogating value capture needs us to dig under the hype and ask ‘who’ questions: Who benefits from the current state? Who pays? If we’re not comfortable with the answers, we need to look at new models. For wide-reaching technology like AI we should demand a minimum of net public value.
+
+Good stuff can happen, but not by accident.
+
+Thanks for reading,
+
+AM

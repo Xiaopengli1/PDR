@@ -1,0 +1,144 @@
+Dear Readers,
+
+Merry Christmas and a Happy New Year!
+
+This is the 2024 annual review issue where I review the past year, and set the scene for what to expect in 2025. You can read previous ones: 2021/22, 2022/23, 2023/24.
+
+2024 was a year of profound change - both personally and globally. I left my product management role after 3 years, and this newsletter turned 3! To celebrate, I hosted an AMA (Ask Me Anything) session and launched my YouTube channel, where I interviewed two inspiring creatives.
+
+I would now reflect on 2024, and share my vision for what's to come in 2025.
+
+
+In 2024 I published 24 articles consisting of:
+
+9 Nero’s Weekly articles
+
+2 Book Reviews – Sam Walton, Grand Strategy
+
+4 Product Management/Tech event review articles - London Tech Week 2024, Issra Omer of Spotify, Product Leader: Shreyas Doshi and Apple’s WWDC 2024 (Apple Intelligence)
+
+2 Product Reviews – Figma Dev Mode, Google NotebookLM
+
+4 articles for this newsletter’s 3-year celebration
+
+1 article on building a successful startup and the Tech Job Market
+
+On Nero’s Weekly:
+My weekly curated article which I mentioned in my 2023/24 annual review article has been successful as a curated list of the latest updates across different topics, which reflects the diversity of the readers of this newsletter.
+
+On Tech Event Reviews:
+I am glad I was able to attend and share the lessons learnt from tech and product management events, especially in London. This included events like the London Tech Week, and London Gaming Festival. One of my goals last year was to highlight the London tech space and PM community. I aim to build on this in 2025.
+
+On Book Reviews:
+I was able to write 2 book reviews in 2024.
+
+I wrote the part 2 of the Grand Strategy series first introduced in 2023. It’s exhilarating discovering a tough new topic, studying it from different angles, and being able to explain it in simpler terms in an article.
+
+Writing about Sam Walton and his experience founding and building Walmart was incredible. LinkedIn analytics showed that 2% of the readers of my book review were Walmart employees!
+
+I would like to write more book reviews in 2025.
+
+On Product Reviews:
+I was really excited to be able to write 2 deep dive product review articles. This involved studying everything I could on the product, using the product, and thinking: How could I make this better?
+
+Figma’s Dev Mode was my 3rd article on Figma, so I enjoyed connecting my past writing on the business strategy, product strategy with the product thinking of this new product.
+
+I always wanted to write on an AI product with a clear use case. GoogleLM was that AI product. I watched it convert my latest article to a podcast. It was just like magic. I enjoyed reviewing every aspect of this product, and using it, to learn more about articles I had written.
+
+2024 Review – Most popular articles
+This year’s most-read articles, by numbers of views:
+
+1. #68. NotebookLM. A Product Review – “Main learning point: I found NotebookLM’s interface quite intuitive to use. Once you get started, everything else is straightforward. The audio overview feature is the most exciting feature and is helping listeners unearth and make connections between different insights that they may otherwise miss from just reading the article.”
+
+2. #67. Nero’s Weekly (Week 8) – The key takeaways from this article were: the rise of AI Agents, the PM job market, and best practices for developing AI products, marketing communication, and user research.
+
+3. #62. What I learned from Shreyas Doshi. On Finding your Superpower, Building Products, and your Career – The session was packed with valuable insights on discovering your superpower, product development, and advancing in your career. I like the Q&A format of the event and hence this article.
+
+4. #64. What I learned from Issra Omer of Spotify. On Building Products, Cultivating your Community, and Embracing Imposter Syndrome - The session was packed with valuable insights. In addition to my takeaways, I included links to helpful framework: Spotify’s 4 step product development process, thoughtful execution tree, five whys, and falling in love with the problem and not the solution.
+
+5. #66. London Tech Week 2024. Perspective shaped by AI, Gaming, Creativity, and Africa – This article unpacked all the key takeaways from London Tech Week 2024 event. This event focused on emerging trends in AI, healthcare, gaming, creativity, and Africa's booming tech scene.
+
+The most rewarding article I wrote in 2024 was #70. What Does It Take to Build a Successful Startup? Talk to your users, think big and start small, speed is a habit – I started of writing this article in my standard event review format, capturing the questions asked and answers.
+
+But during the networking session I found myself reflecting on my own entrepreneurial experience and if I was to do it again, how I would do it better. I also included a directory of all the helpful articles (and frameworks) I have written about for building a product and startup. Here they are:
+
+Talking to users, writing effective user stories, developing product thinking,
+
+The job-to-be-done (JTBD) framework, falling in love with the problem, overcoming product risk, imposter syndrome, effective marketing communication, how to sell,
+
+Strategy, management & teamwork, starting a business cheaply,
+
+Chasing a dream, and choosing yourself.
+
+2024 Review – Newsletter Rebrand
+You might have noticed a different colour, logo, and homepage. During the year I did a rebrand of this newsletter.
+
+I started by thinking through the goal of the newsletter. I settled on the goal to enable readers to uncover insights to build better products for their business, and advance their career.
+
+I then focused on how I can make it easier for readers to find relevant articles in a shorter time – Discoverability.
+
+I updated the header and ‘About’ page with the different topics – Nero’s Weekly, Career Corner, Technology/Product Management, Business, Africa, and Book Reviews.
+
+I then created sections for the most popular article, and highlight for the different topics.
+
+What do you think about this rebrand? Let me know in the comments.
+
+2024 Review – Other Content
+Beyond writing, I gave a presentation to a class of MBA students on a career in tech. I reflected on my career journey, the career frameworks I use, and how I believe anyone can get a tech (or any) job today.
+
+I highlighted the importance of identifying your career vision and strengths, networking, and having a personal project as evidence of your interest and skills. You can read the summary.
+
+One of the attendees remarked that: "I attended the session and it was hands down the most concise and laser focused presentation I have attended in a while! Clear actionable steps, neat frameworks and great advice" 😊
+
+YouTube
+I also launched my YouTube channel - EmperorNerokwa. Check it out 😊
+
+I had 2 lively conversations on creativity and entrepreneurship with my friend Buka the Builder, and on building a hospitality legacy with Alberto Zandi, cofounder of Emerald Hospitality Group.
+
+Podcast
+Excited to announce that I have also launched my podcast ‘The Nero Okwa Xperience’. I would be discussing more on this in a separate post. The first 7 episodes are now live. You can listen to them on Spotify and Apple Podcast! 🎧.
+
+I always wanted to explore new storytelling formats beyond writing, and I am glad I have started the podcast and YouTube channel. I look forward to producing more engaging videos, podcast episodes, and interesting interviews in 2025.
+
+Kindly subscribe to the YouTube channel and podcast 😊.
+
+Now for 2025.
+
+2025 and Beyond
+Choosing a Subtitle
+Every year I choose a theme (captured in a subtitle) for me, and this newsletter. This has to be something that is meaningful and aspirational. That is why I sign off each article with it.
+
+When I started this newsletter in 2022 it was Racing Towards Excellence. In 2023 it was Delivering Value, and in 2024: Go Further.
+
+So, without further ado, the theme and subtitle for 2025 is:
+
+The Best is Yet to Come
+This is something I always say in conversation. I like how it unifies all the past themes: excellence, delivering value, and the daily strive towards mastery and craftsmanship. I like that 😊.
+
+In 2025, I am interested in how I can keep exceeding my expectation of my work, from writing to newer mediums like video and the podcast, and public speaking.
+
+Telling relevant stories well, in different mediums.
+
+For example, in 2021 I wrote Career Advice, which I built on in 2022 with Career Frameworks, and finally last year, I was able to present the ideas from both articles to the MBA students (mentioned earlier) in Navigating the Tech Job Market.
+
+The What
+In 2025, I want to write:
+
+More book reviews article.
+
+A series on Amazon.com - the story, the business strategy, and the company. My goal is to answer the question: what would it take to build an Amazon company today?
+
+A series on Africa: Past, Present, and Future – This is ambitious. I actively read about Africa, its history, and the current economic, business, and technology developments. I am interested in telling a cohesive story that explores Africa’s past, and present, and answers the question what is required for a prosperous future? This would be written for entrepreneurs, professionals, and policy makers, and myself 😊.
+
+Technology/Product focused articles - that show how a product is built from idea to development, and launch. This would be written for entrepreneurs, and would also highlight where AI can help.
+
+More articles that highlight the UK tech sector. Living in the UK, I believe there is an opportunity to better highlight the UK tech industry and the state of product management here.
+
+I would also retain the curated Nero’s Weekly format but my focus in 2025 would be on writing the deep dive article and series.
+
+Subscribe and level up your knowledge and career in 2025!
+Free subscribers will continue to get my popular book reviews and Nero's Weekly. But for the price of a coffee each week, paid subscribers unlock access to all 80+ of my articles, including deep dives into tech trends, insightful career advice, product analyses, and business breakdowns.
+
+Let's Begin!
+
+I'm excited to embark on this journey with you in 2025. Let's make it a year of learning, growth, and incredible discoveries.

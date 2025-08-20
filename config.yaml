@@ -9,13 +9,13 @@ provide_settings:
     # provider: "DeepSeek"
     # config:
     #   model: "deepseek-chat"
-    #   api_key: "sk-c824a7613a7f47d0afc2defda87eff2a"  # Uncomment to override the `DEEPSEEK_API_KEY` set in the environment variable
+    #   api_key: ""  # Uncomment to override the `DEEPSEEK_API_KEY` set in the environment variable
     #   base_url: "https://api.deepseek.com"
 
    provider: "DeepSeek"
    config:
      model: "deepseek-reasoner"
-     api_key: "sk-c824a7613a7f47d0afc2defda87eff2a"  # Uncomment to override the `DEEPSEEK_API_KEY` set in the environment variable
+     api_key: ""  # Uncomment to override the `DEEPSEEK_API_KEY` set in the environment variable
      base_url: "https://api.deepseek.com"
 
 #    provider: "PPIO"

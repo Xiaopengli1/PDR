@@ -1,0 +1,96 @@
+Write a **2,000 – 2,400-word annual review & preview** for a three-year-old tech-and-career newsletter called *[Newsletter Name]*.
+Structure, tone, and content must follow the outline and specifications below.
+
+---
+
+## 1. Greeting & Hook (≈120–150 words)
+- Open with a warm seasonal greeting (“Merry Christmas and Happy New Year!”) that acknowledges returning readers.
+- Tease the twin goals: recap 2024 and set the stage for 2025.
+
+## 2. Executive Snapshot (≈80 words, bullet list)
+- Present 3-to-5 headline stats for 2024 (articles published, total views, subscriber growth %, engagement rate, top traffic source).
+
+## 3. 2024 in Review
+### 3.1 Content Output Overview (≈120 words)
+- List total articles by category (Nero’s Weekly, Book Reviews, Tech-Event Reviews, Product Reviews, Career/Startup essays).
+
+### 3.2 Deep Dives on Key Categories
+#### a. **Nero’s Weekly** (≈120 words)
+- Summarize purpose and readership diversity; cite one standout issue and its top links.
+
+#### b. **Tech-Event Reviews** (≈150 words)
+- Highlight London Tech Week, Gaming Festival, WWDC; pull in one stat on UK tech-sector growth (2024 Q4, source).
+
+#### c. **Book Reviews** (≈130 words)
+- Discuss Sam Walton & *Grand Strategy* pieces; note the 2 % Walmart-employee readership with LinkedIn analytic citation.
+
+#### d. **Product Reviews** (≈150 words)
+- Compare Figma Dev Mode vs. Google NotebookLM; mention AI-driven feature (“audio overview”) and its user benefits.
+
+### 3.3 Top Five Most-Read Articles (≈140 words)
+- Rank 1 – 5 with view counts; include one-sentence “main learning point” for each.
+
+### 3.4 Most Rewarding Article (≈120 words)
+- Reflect on the startup-building essay (#70); explain why personal resonance > raw pageviews.
+
+### 3.5 Brand Refresh (≈140 words)
+- Describe new color palette, logo, homepage curation; explain *discoverability* goal.
+- Embed one brief reader quote praising the redesign.
+
+### 3.6 Beyond the Page (≈180 words)
+- **Speaking**: MBA tech-career talk—outline the three frameworks shared; include attendee testimonial.
+- **YouTube**: launch stats (subs, watch-hours); summarize two interview episodes.
+- **Podcast**: quick rundown of first 7 episodes and early listener feedback.
+- Tie these channels to a “multimodal storytelling” strategy.
+
+## 4. Industry Context (≈150 words)
+- Situate the newsletter in 2024 creator-economy trends: Substack paid-subscriber growth, short-form video surge, podcast ad CPM averages (cite 2024 reports).
+
+## 5. Theme for 2025 (≈120 words)
+- Reveal subtitle **“The Best Is Yet to Come.”**
+- Connect to past themes (Excellence → Value → Go Further); articulate the unifying idea of perpetual craftsmanship.
+
+## 6. 2025 Roadmap
+### 6.1 Content Pillars (≈250 words total)
+- **Book Reviews** – goal: +6 titles; mix of tech-biographies & strategy classics.
+- **Amazon Series** – three-part analysis (history, strategy, “building the next Amazon”).
+- **Africa: Past, Present, Future** – multi-post narrative aimed at entrepreneurs & policymakers.
+- **Product-Build Walkthroughs** – idea → launch, spotlighting where AI accelerates each phase.
+- **UK Tech Focus** – quarterly deep-dive on a British tech cluster or PM trend.
+
+### 6.2 Format Expansion (≈120 words)
+- YouTube: target upload cadence, interview wishlist, KPI (e.g., 5 k subs).
+- Podcast: season-two outline, cross-promo plan with newsletter.
+- Live Webinars / AMAs: experiment schedule.
+
+### 6.3 Monetisation & Community (≈100 words)
+- Re-explain free vs. paid tier value; announce new perks (exclusive Slack, template library, discount codes).
+- State aspirational paid-subscriber goal and breakeven revenue point.
+
+## 7. Risks & Mitigation (≈90 words)
+- Identify two Achilles’ heels (time bandwidth, content saturation).
+- Outline tactics: batching, guest writers, data-driven topic validation.
+
+## 8. Call to Action & Closing (≈80 words)
+- Invite feedback on rebrand, series ideas, and theme.
+- Encourage readers to **subscribe, share, and comment**; end with upbeat gratitude line.
+
+## 9. Citations & Endnotes
+- Use short parenthetical credits in text (Pew 2024) or numbered endnotes.
+- After main body, list 6-to-8 APA-style references: industry reports, analytics dashboards, event sources.
+
+---
+
+### STYLE & TONE
+- First-person singular; friendly, energetic, lightly self-deprecating.
+- Balance anecdote with data; keep paragraphs ≤110 words.
+- Sprinkle in emojis sparingly (≤3).
+- Use bold for sub-section headers inside sections when helpful.
+
+### FORMATTING
+- Include one Markdown table (content output overview) and one blockquote (reader praise).
+- Markdown or HTML acceptable.
+
+### OUTPUT
+Return only the finished, fully-formatted article.
+Do **not** output these instructions or the prompt scaffold itself.

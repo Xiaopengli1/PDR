@@ -1,0 +1,66 @@
+Write a **1,800 – 2,200-word analytical report** that argues AI is ultimately about *power* rather than *technology*, and that general-purpose technologies must deliver **public value** beyond private profit.
+Structure, content, and style must follow the outline and specifications below.
+
+---
+
+## 1. Title & Deck
+- Craft a punchy headline (≤12 words) that hints at power dynamics in AI.
+- Add a one-sentence deck/strapline that frames the core thesis.
+
+## 2. Introduction (≈200 – 300 words)
+- Open with a quick anecdote or cultural reference that shows your personal history with tech (e.g., DOS games, early coding).
+- State the central claim: AI hype masks deeper questions of *who benefits, who pays*.
+- Signal that the article is *not* anti-technology but pro-accountability.
+
+## 3. Re-Framing Risk as Reality (≈250 words)
+- Contrast popular “risk” narratives with tangible harms already documented (social harm, environmental cost, autonomous weapons).
+- Use at least **two recent examples** (post-2023) with citations.
+- Compare Big Tech’s trajectory to oil & tobacco to justify the analogy.
+
+## 4. From Risk to Aspiration (≈150 – 200 words)
+- Argue that merely “making products less dangerous” is a low bar.
+- Introduce the concept of *public value* and insist we can aim for “life-enhancing brilliance.”
+
+## 5. Section Header: “What Is Public Value?” (≈400 words total)
+### 5.1 Definition
+- Provide a crisp definition: long-term, collective benefit that resists easy privatization. Cite at least one academic (e.g., Mark Moore, Mariana Mazzucato).
+
+### 5.2 The Four-Question Diagnostic
+- Present the four evaluative questions in a numbered list or call-out box:
+  1. Collective good?
+  2. Leveraged impact?
+  3. Sustained effect?
+  4. Protection/promotion of shared values?
+- For each question, give one contemporary AI example (e.g., open-source model, surveillance tool) and indicate whether it passes/fails.
+
+## 6. Public Value Doesn’t Happen by Accident (≈250 words)
+- Quote Lord Acton (“Power corrupts…”).
+- Explain why leaving Big Tech to self-regulate is insufficient when a technology becomes *general purpose*.
+
+## 7. What Government (and the Public Sector) Can Do (≈400 – 500 words)
+Organize into **four actionable subsections** with bold sub-heads:
+- **Fund Public R&D** – reference historical precedents (ARPANET → Internet, NIH funding for mRNA).
+- **Regulate Properly** – outline key principles for AI law: transparency, liability, auditability.
+- **Own or Steward Critical Infrastructure** – argue for “public data, public compute,” likening foundational AI to a utility.
+- **Back Non-Profit & Open Alternatives** – cite Yoshua Bengio’s LawZero, Europe’s AI Alliance, etc.
+
+## 8. Counterarguments & Rebuttals (≈150 – 200 words)
+- Briefly address critiques that public ownership slows innovation or that regulation stifles startups; provide evidence-based counterpoints.
+
+## 9. Conclusion (≈120 – 180 words)
+- Restate the power lens: ask the reader “Who gains? Who pays?”
+- End with a forward-looking call: demand a **net-positive public value floor** for AI.
+
+---
+
+### STYLE & TONE
+- First-person singular voice; mix personal anecdotes with rigorous analysis.
+- Energetic yet measured; avoid hype or fatalism.
+- Vary sentence length; keep paragraphs short (≤120 words) for web readability.
+
+
+### FORMATTING
+- Bullet or numbered lists where helpful; otherwise narrative prose.
+
+### OUTPUT
+Return only the finished article, fully formatted (Markdown acceptable).

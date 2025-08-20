@@ -1,0 +1,19 @@
+The Wayback Machine, Archive.org, Archive-it.org, and OpenLibrary.org came up in stages over the week after cyberattacks with some of the contributor features coming up over the last couple of weeks.  A few to go.  Much of the development during this time has been focused on securing the services so they can still run while attacks continue.
+
+The Internet Archive is adapting to a more hostile world, where DDOS attacks are recurring periodically (such as yesterday and today), and more severe attacks might happen. Our response has been to harden our services and learn from friends. This note is to share some high level findings, without being so detailed as to help those that are still attacking archive.org.
+
+By tightening firewall technologies, we have changed how data flows through our systems to improve monitoring and control. The downside is these upgrades have forced changes to software, some of it quite old.
+
+The bright side is this is forcing upgrades that we have long planned or hoped for.  We are greatly helped by the free and open source community’s improving tools that can be used by large corporations as well as non-profit libraries because they are freely available.
+
+Also, some commercial companies have offered assistance that would generally be prohibitively expensive.  We are grateful for the support.
+
+Where the Internet Archive has always focused on building collections and preserving them, we have been starkly reminded how important reliable access is to researchers, journalists, and readers. This is leading us to install technical defenses and increase staff to improve service availability.
+
+Libraries in general, and the Internet Archive in specific, have been under attack for many years now.  For us it started with the book publishers suing (about lending books), and now the recording industry (about 78rpm records), which is a drain on our staff and financial resources. Now recurring DDOS attacks distract us from the goals of preservation and access to our digital heritage.
+
+We don’t know why these attacks have started recently and if they are coordinated, but we are building defenses.
+
+We are grateful for the support from our patrons, through social media, through donations, and through offers of help, which frankly, makes it worthwhile to keep building a library for all of us.
+
+– Brewster Kahle

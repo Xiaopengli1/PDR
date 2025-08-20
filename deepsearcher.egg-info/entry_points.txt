@@ -1,0 +1,2 @@
+[console_scripts]
+deepsearcher = deepsearcher.cli:main

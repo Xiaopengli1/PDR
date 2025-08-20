@@ -1,0 +1,66 @@
+Write a **1,600 – 2,000-word investigative report** on the Internet Archive’s recent experience with repeated DDoS attacks, the organization’s evolving defenses, and the broader pressures modern libraries face (legal, financial, and technical).  
+Follow the outline, style rules, and research requirements below.
+
+---
+
+## 1. Title & Deck
+- Craft a concise headline (≤12 words) that signals both *threat* and *resilience* (e.g., “When Libraries Come Under Fire”).  
+- Add a one-sentence deck/strapline that previews the twin themes: hostile internet, hardened defenses, enduring mission.
+
+## 2. Scene-Setter Introduction (≈180 – 220 words)
+- Open with a vivid “in-the-trenches” moment (e.g., servers flickering, staff scanning attack dashboards).  
+- Introduce Brewster Kahle or another Internet Archive voice in one sentence.  
+- End with the thesis: *“Preserving the past now requires fighting real-time battles.”*
+
+## 3. Anatomy of the Attacks (≈250 words)
+- Explain what a DDoS is in plain English.  
+- Present a **timeline table or bullet list** of the week-long outages (Wayback, OpenLibrary, etc.).  
+- Include at least **two numeric datapoints**: traffic surge magnitude, downtime hours.
+
+## 4. Hardening the Archive (≈300 words)
+### 4.1 Firewall Upgrades & Traffic Rerouting  
+### 4.2 Forced Modernization of Legacy Code  
+- Detail key defensive moves: updated WAF rules, new monitoring layers, selective rate-limiting.  
+- Acknowledge side-effects: broken contributor features, forced code refactor.
+
+## 5. Allies on the Front Line (≈200 words)
+- Highlight **open-source tools** (e.g., Nginx, ModSecurity, fail2ban) enabling nonprofits to scale defenses.  
+- Note offers of *pro-bono* help from commercial security vendors; specify at least one example from 2024-25.
+
+## 6. Beyond Bits & Bytes: Why Access Matters (≈220 words)
+- Stress that preservation without uptime is meaningless for journalists, researchers, and students.  
+- Insert a **pull-quote**: “Reliable access *is* preservation in a connected world.”
+
+## 7. The Long Siege: Legal & Financial Strains (≈250 words)
+- Summarize ongoing lawsuits (publishers over controlled digital lending; recording industry over 78 rpm).  
+- Quantify legal costs or staff hours diverted, if available.  
+- Draw the connection: legal battles + DDoS = double-barreled drain on mission.
+
+## 8. Libraries Under Attack, Everywhere (≈180 words)
+- Situate the Internet Archive within a wider trend—public libraries, open-access repositories, and independent archives all facing escalating cyber or legal attacks.  
+- Provide **two short global examples** (post-2023) with parenthetical citations.
+
+## 9. Community Resilience (≈150 words)
+- Showcase social-media solidarity, patron donations, and volunteer sysadmin offers.  
+- Embed one mini-case (e.g., grassroots fundraising spike after outage tweet).
+
+## 10. What’s Next & Call to Action (≈120 – 150 words)
+- Outline next defensive steps: staff hiring, redundancy, mirrored nodes.  
+- Conclude by inviting readers to support: donate, mirror, or advocate.
+
+---
+
+### STYLE & TONE
+- First-person plural narration (“we watched packets spike…”) mixed with third-person reportage.  
+- Crisp, non-alarmist, but candid about stakes.  
+- Sentences vary in length; paragraphs ≤120 words.  
+- Minimal jargon; explain technical terms once, then proceed.  
+
+
+### FORMATTING
+- Markdown welcome.
+- Bold key technical terms on first mention.
+
+### OUTPUT
+Return **only** the final article, fully formatted.  
+Do **not** output these instructions or the prompt scaffolding.

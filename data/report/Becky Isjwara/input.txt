@@ -1,0 +1,61 @@
+Draft a **1,400 – 1,700-word guide** that motivates professionals to start a stealth side-project (“cheat on your day job”), showing them how to go from first experimental post to validated business idea.
+
+Follow the outline, style rules, and research requirements below.
+
+---
+
+## 1. Title & Subtitle
+- Write a punchy headline (≤10 words) that hints at “stealth” and “side hustle.”
+- Add a one-sentence subtitle that previews the central message: small experiments → big signals → optional income.
+
+## 2. Cold-Open Anecdote (≈150 – 200 words)
+- Begin with a vivid, first-person story of quietly publishing your *very first* piece of content (YouTube upload, blog post, newsletter, etc.).
+- End the anecdote with a one-sentence thesis: *Tiny public acts ignite outsized journeys.*
+
+## 3. Permission Slip (≈120 words)
+- Explicitly tell readers: *“Yes, you have permission.”*
+- Emphasize that no boss or investor must approve early experiments.
+
+## 4. It Doesn’t Have to Be a Business (≈180 – 220 words)
+- Explain how hobbies or health projects can serve as creative laboratories.
+- Give one personal example (e.g., Indonesian weekend meal-prep in Hong Kong) illustrating tracking, iterating, sharing.
+
+## 5. When Money *Is* the Goal
+### 5.1 Play to Your Strengths (≈200 words)
+- Argue that adjacent skills beat starting from scratch.
+- Provide at least **two real-world examples** (post-2022) of creators leveraging day-job skills for side income.
+
+### 5.2 Audit the Questions People Ask You (≈120 words)
+- Show how inbound questions reveal market demand; include a quick bullet list template for readers to capture FAQs.
+
+## 6. Dreaming Up an Offer (≈150 words)
+- Introduce divergent thinking: brainstorm products/services tied to the FAQs.
+- List two sample offers, one service (e.g., group coaching) and one product (e.g., roadmap PDF).
+
+## 7. Tiny Tests, Big Signals (≈250 words)
+- Teach validation tactics: Calendly chats, 3-question Google Form, Instagram poll, LinkedIn soft-pitch.
+- Embed **three contemporary mini-case studies** (e.g., Will Mannon’s 10 % deposit, Erin Nolan’s beta course, Linart Seprioto’s free workshop) with parenthetical citations.
+
+## 8. Start Small & Stealth (≈180 words)
+- Recap the iterative mindset: DM mining → skill map → offer → validation loop.
+- Encourage readers to treat each sprint as data, not destiny.
+
+## 9. Call to Action & Closing Wink (≈100 – 120 words)
+- Issue a bold directive: *“Go ahead—cheat on your job. I won’t tell.”*
+- End with a playful emoji or wink to match the original tone.
+
+---
+
+### STYLE & TONE
+- First-person singular; conversational, upbeat, mildly irreverent.
+- Sentences mostly short/medium; mix personal narrative with actionable advice.
+- Maintain psychological safety—avoid shaming or hustle-culture extremes.
+- Pepper in relatable emoji, but keep them sparing (≤3 total).
+
+### FORMATTING
+- Bold key action verbs in lists.
+- Markdown formatting is welcome.
+
+### OUTPUT
+Return only the finished article—fully formatted.
+Do **not** output the prompt, system instructions, or any meta notes.

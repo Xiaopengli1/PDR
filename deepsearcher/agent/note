@@ -1,0 +1,11 @@
+# deep_search_v1 是一个结合内外部检索的框架，web检索框架
+
+# deep_search_v2 是未完成的脚本
+
+# deep_search_v3 外部检索为wiki
+
+# deep_search_v4 多线程调用版本，增加速度
+
+# deep_search_v5 适配Qwen3 版本
+
+# deep_search_v6 多线程调用版本，profile+external search
