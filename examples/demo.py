@@ -233,14 +233,16 @@ from deepsearcher.offline_loading import load_from_local_files
 task = "report"
 
 
-if task=="topic":
-    test_dir = "../data/topic/test"
-elif task=="abstract":
-    test_dir = "../data/abstract/test"
-elif task=="report":
-    test_dir = "../data/report"
-elif task=="speech":
-    test_dir = "../data/speech"
+_script_dir = os.path.dirname(os.path.abspath(__file__))
+_data_root = os.path.join(_script_dir, "..", "data")
+if task == "topic":
+    test_dir = os.path.join(_data_root, "topic", "test")
+elif task == "abstract":
+    test_dir = os.path.join(_data_root, "abstract", "test")
+elif task == "report":
+    test_dir = os.path.join(_data_root, "report")
+elif task == "speech":
+    test_dir = os.path.join(_data_root, "speech")
 
 
 results = []

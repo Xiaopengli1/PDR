@@ -45,22 +45,22 @@ Return only a valid JSON object that adheres exactly to the schema below. Do **n
 
 <output_format>
 {{
-  "Comprehensiveness": [
+  "Comprehensiveness": {{
     "analysis": "<comparative analysis>",
     "score": <number 0-10>
-  ],
-  "Readability": [
+  }},
+  "Readability": {{
     "analysis": "<comparative analysis>",
     "score": <number 0-10>
-  ],
-  "Content Personalisation": [
+  }},
+  "Content Personalisation": {{
     "analysis": "<comparative analysis>",
     "score": <number 0-10>
-  ],
-  "Presentation Personalisation": [
+  }},
+  "Presentation Personalisation": {{
     "analysis": "<comparative analysis>",
     "score": <number 0-10>
-  ]
+  }}
 }}
 </output_format>
 

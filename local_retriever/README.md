@@ -1,4 +1,4 @@
-## Local Retreiver Deployment
+## Local Retriever Deployment
 
 We refer to https://github.com/PeterGriffinJin/Search-R1, which uses wiki as retrieval corpus and build a local retriever.
 

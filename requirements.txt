@@ -10,3 +10,6 @@ termcolor
 fastapi
 uvicorn
 pydantic-settings
+rouge-score
+nltk
+pyyaml

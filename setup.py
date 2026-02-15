@@ -1,8 +1,8 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="deepsearcher",
-    version="0.0.1",
+    name="pdr",
+    version="0.1.0",
     py_modules=["deepsearcher"],
     python_requires=">=3.10",
     packages=find_packages(exclude=["tests", "examples"]),
@@ -19,12 +19,19 @@ setup(
         "fastapi",
         "uvicorn",
         "pydantic-settings",
+        "rouge-score",
+        "nltk",
+        "pyyaml",
     ],
+    extras_require={
+        "figures": ["pymupdf"],
+    },
     entry_points={
         "console_scripts": ["deepsearcher=deepsearcher.cli:main"],
     },
-    description="None",
-    author="Cheney Zhang",
-    author_email="277584121@qq.com",
-    url="https://github.com/zilliztech/deep-searcher",
+    description="Personalized Deep Research (PDR): A User-Centric Framework for Knowledge Discovery",
+    author="Xiaopeng Li et al.",
+    author_email="",
+    url="https://github.com/Xiaopengli1/PDR",
+    keywords=["deep research", "personalization", "RAG", "information retrieval"],
 )
