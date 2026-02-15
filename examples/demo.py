@@ -33,27 +33,27 @@ from rouge_score import rouge_scorer
 import traceback
 
 def calc_single_score(result, ground_truth):
-    """计算单组文本的相似度指标"""
-    # 初始化 ROUGE 计算器
+    """Compute similarity metrics for a single text pair."""
+    # Initialize ROUGE scorer
     scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
     
-    # 计算 ROUGE 指标
+    # Compute ROUGE metrics
     rouge_scores = scorer.score(ground_truth, result)
 
     meteor_grade = meteor_score(result, ground_truth)
     
-    # 计算 Unigram F1
+    # Compute Unigram F1
     result_tokens = result.split()
     gt_tokens = ground_truth.split()
     
-    # 创建词集合
+    # Create token sets
     result_set = set(result_tokens)
     gt_set = set(gt_tokens)
     
-    # 计算交集
+    # Compute overlap
     overlap = len(result_set & gt_set)
     
-    # 计算精确率、召回率和 F1
+    # Compute precision, recall, and F1
     precision = overlap / len(result_set) if len(result_set) > 0 else 0
     recall = overlap / len(gt_set) if len(gt_set) > 0 else 0
     
@@ -71,11 +71,11 @@ def calc_single_score(result, ground_truth):
     }
 
 def calc_final_scores(results, ground_truths):
-    """计算多组文本的最终平均分数"""
-    # 验证输入
-    assert len(results) == len(ground_truths), "结果和参考文本数量不一致"
+    """Compute final average scores across multiple text pairs."""
+    # Validate input
+    assert len(results) == len(ground_truths), "Results and ground truths length mismatch"
     
-    # 初始化累积变量
+    # Initialize accumulators
     total_rouge1 = 0.0
     total_rouge2 = 0.0
     total_rougeL = 0.0
@@ -84,17 +84,17 @@ def calc_final_scores(results, ground_truths):
     
     num_pairs = len(results)
     
-    # 遍历所有文本对
+    # Iterate over all text pairs
     for i in range(num_pairs):
-        scores = calc_single_score(results[i], ground_truths[i])        
-        # 累加分数
+        scores = calc_single_score(results[i], ground_truths[i])
+        # Accumulate scores
         total_rouge1 += scores["rouge1"]
         total_rouge2 += scores["rouge2"]
         total_rougeL += scores["rougeL"]
         total_f1 += scores["f1"]
         total_meteor += scores["meteor"]
     
-    # 计算宏平均
+    # Compute macro average
     return {
         "rouge1": total_rouge1 / num_pairs,
         "rouge2": total_rouge2 / num_pairs,
@@ -254,17 +254,16 @@ ground_truths = []
 all_scores = []
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-# 创建JSON Lines文件
+# Create JSONL output file
 jsonl_path = f"evaluation_Ours_R1_{task}_{timestamp}.jsonl"
 
-# 打开文件用于写入JSON Lines
 with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
-    # 遍历 test 下的所有子文件夹（作者目录）
+    # Iterate over author directories under test_dir
     for author_dir in os.listdir(test_dir):
         author_path = os.path.join(test_dir, author_dir)
-        error_info = ""  # 记录错误信息
+        error_info = ""
         
-        # 初始化样本结果字典
+        # Initialize sample result dict
         sample_result = {
             "author": author_dir,
             "task": task,
@@ -296,7 +295,7 @@ with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
                     collection_description="A collection of user expert knowledge..."
                 )
             except Exception as e:
-                error_info = f"知识库加载失败: {str(e)}"
+                error_info = f"Knowledge base loading failed: {str(e)}"
                 raise
                 
             try:
@@ -305,44 +304,44 @@ with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
                     llm=llm
                 )
             except Exception as e:
-                error_info = f"个性化理解失败: {str(e)}"
+                error_info = f"Personalized understanding failed: {str(e)}"
                 raise
 
-            # 读取输入文件
+            # Read input file
             try:
                 input_path = os.path.join(author_path, 'input.txt')
                 with open(input_path, 'r', encoding='utf-8') as f:
                     input_query = f.read()
             except Exception as e:
-                error_info = f"输入文件读取失败: {str(e)}"
+                error_info = f"Input file read failed: {str(e)}"
                 raise
 
-            # 模型查询
+            # Model query
             try:
                 result = query(
                     original_query=input_query,
                     max_iter=2,
                     personalized_info_address=author_path + "/knowledge_base/personalized_summary.json"
                 )
-                sample_result["generation"] = result[0]  # 保存生成结果
+                sample_result["generation"] = result[0]
             except Exception as e:
-                error_info = f"模型查询失败: {str(e)}"
+                error_info = f"Model query failed: {str(e)}"
                 raise
 
-            # 读取真实结果
+            # Read ground truth
             try:
                 output_path = os.path.join(author_path, 'output.txt')
                 with open(output_path, 'r', encoding='utf-8') as f:
                     ground_truth = f.read()
-                sample_result["ground_truth"] = ground_truth  # 保存真实结果
+                sample_result["ground_truth"] = ground_truth
             except Exception as e:
-                error_info = f"真实结果读取失败: {str(e)}"
+                error_info = f"Ground truth read failed: {str(e)}"
                 raise
 
-            # 计算分数
+            # Compute scores
             try:
                 scores = calc_single_score(result[0], ground_truth)
-                # 更新样本分数
+                # Update sample scores
                 sample_result["scores"] = {
                     "rouge1": scores["rouge1"],
                     "rouge2": scores["rouge2"],
@@ -352,10 +351,10 @@ with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
                 }
                 sample_result["success"] = True
             except Exception as e:
-                error_info = f"分数计算失败: {str(e)}"
+                error_info = f"Score computation failed: {str(e)}"
                 raise
 
-            # 打印结果
+            # Print results
             print("-----------Generation---------------")
             print(result[0])
             print("-----------Ground Truth-------------")
@@ -371,7 +370,7 @@ with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
             results.append(result[0])
             ground_truths.append(ground_truth)
 
-            # 记录当前样本的分数
+            # Record scores for current sample
             sample_scores = {
                 "rouge1": scores["rouge1"],
                 "rouge2": scores["rouge2"],
@@ -382,26 +381,25 @@ with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
             all_scores.append(sample_scores)
             
         except Exception as e:
-            # 打印详细错误日志
             traceback.print_exc()
-            print(f"处理 {author_dir} 时出错: {error_info}")
+            print(f"Error processing {author_dir}: {error_info}")
             sample_result["error"] = error_info
             
         finally:
             print("Start printing!!!!")
-            # 将样本结果以JSON行格式写入文件
+            # Write sample result as JSON line
             jsonl_file.write(json.dumps(sample_result, ensure_ascii=False) + '\n')
-            jsonl_file.flush()  # 确保立即写入磁盘
+            jsonl_file.flush()
             print("------------------------------------")
 
-# 最终评分（仅对成功处理的样本）
+# Final scoring (only for successful samples)
 if results and ground_truths:
     print("--------------Final Score----------------")
     try:
         final_scores = calc_final_scores(results, ground_truths)
         print(final_scores)
         
-        # 创建最终评分记录
+        # Create final score record
         final_record = {
             "type": "final_scores",
             "task": task,
@@ -410,13 +408,13 @@ if results and ground_truths:
             "sample_count": len(results)
         }
         
-        # 将最终评分追加到JSON Lines文件
+        # Append final scores to JSONL file
         with open(jsonl_path, 'a', encoding='utf-8') as jsonl_file:
             jsonl_file.write(json.dumps(final_record, ensure_ascii=False) + '\n')
             
     except Exception as e:
-        print(f"最终评分失败: {str(e)}")
-        # 创建错误记录
+        print(f"Final scoring failed: {str(e)}")
+        # Create error record
         error_record = {
             "type": "final_scores_error",
             "task": task,
@@ -427,8 +425,8 @@ if results and ground_truths:
             jsonl_file.write(json.dumps(error_record, ensure_ascii=False) + '\n')
     print("--------------Final Score----------------")
 else:
-    print("警告：没有成功处理的样本，跳过最终评分")
-    # 创建空结果记录
+    print("Warning: No successful samples, skipping final scoring")
+    # Create empty result record
     empty_record = {
         "type": "final_scores_empty",
         "task": task,
@@ -438,4 +436,4 @@ else:
     with open(jsonl_path, 'a', encoding='utf-8') as jsonl_file:
         jsonl_file.write(json.dumps(empty_record, ensure_ascii=False) + '\n')
 
-print(f"结果已保存至: {jsonl_path}")
+print(f"Results saved to: {jsonl_path}")

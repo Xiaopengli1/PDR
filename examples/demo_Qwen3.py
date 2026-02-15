@@ -21,33 +21,33 @@ _stemmer = PorterStemmer()
 from deepsearcher.online_query import query
 from deepsearcher.configuration import Configuration, init_config, ModuleFactory
 from deepsearcher.personalized_understanding import personalized_understanding
-from deepsearcher.llm.qwen3 import QwenLLM  # 明确使用Qwen3
+from deepsearcher.llm.qwen3 import QwenLLM
 from deepsearcher.offline_loading import load_from_local_files
 from rouge_score import rouge_scorer
 
 def calc_single_score(result, ground_truth):
-    """计算单组文本的相似度指标"""
-    # 初始化ROUGE计算器
+    """Compute similarity metrics for a single text pair."""
+    # Initialize ROUGE scorer
     scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
     
-    # 计算ROUGE指标
+    # Compute ROUGE metrics
     rouge_scores = scorer.score(ground_truth, result)
     
-    # 计算METEOR指标
+    # Compute METEOR metric
     meteor_grade = meteor_score(result, ground_truth)
     
-    # 计算Unigram F1
+    # Compute Unigram F1
     result_tokens = result.split()
     gt_tokens = ground_truth.split()
     
-    # 创建词集合
+    # Create token sets
     result_set = set(result_tokens)
     gt_set = set(gt_tokens)
     
-    # 计算交集
+    # Compute overlap
     overlap = len(result_set & gt_set)
     
-    # 计算精确率、召回率和F1
+    # Compute precision, recall, and F1
     precision = overlap / len(result_set) if len(result_set) > 0 else 0
     recall = overlap / len(gt_set) if len(gt_set) > 0 else 0
     
@@ -65,11 +65,11 @@ def calc_single_score(result, ground_truth):
     }
 
 def calc_final_scores(results, ground_truths):
-    """计算多组文本的最终平均分数"""
-    # 验证输入
-    assert len(results) == len(ground_truths), "结果和参考文本数量不一致"
+    """Compute final average scores across multiple text pairs."""
+    # Validate input
+    assert len(results) == len(ground_truths), "Results and ground truths length mismatch"
     
-    # 初始化累积变量
+    # Initialize accumulators
     total_rouge1 = 0.0
     total_rouge2 = 0.0
     total_rougeL = 0.0
@@ -78,18 +78,18 @@ def calc_final_scores(results, ground_truths):
     
     num_pairs = len(results)
     
-    # 遍历所有文本对
+    # Iterate over all text pairs
     for i in range(num_pairs):
         scores = calc_single_score(results[i], ground_truths[i])
         
-        # 累加分数
+        # Accumulate scores
         total_rouge1 += scores["rouge1"]
         total_rouge2 += scores["rouge2"]
         total_rougeL += scores["rougeL"]
         total_f1 += scores["f1"]
         total_meteor += scores["meteor"]
     
-    # 计算宏平均
+    # Compute macro average
     return {
         "rouge1": total_rouge1 / num_pairs,
         "rouge2": total_rouge2 / num_pairs,
@@ -99,7 +99,7 @@ def calc_final_scores(results, ground_truths):
     }
 
 def _tokens(text):
-    """简单空白/词标记器 → list[str]"""
+    """Simple whitespace/word tokenizer → list[str]."""
     return _word_re.findall(text.lower())
 
 @lru_cache(maxsize=10_000)
@@ -115,7 +115,7 @@ def _synonyms(word):
     return syns | {word}
 
 def _match_score(cand_tok, ref_tok):
-    """如果令牌匹配返回1，否则返回0"""
+    """Return 1 if tokens match, else 0."""
     if cand_tok == ref_tok:
         return 1
     if _stems(cand_tok) & _stems(ref_tok):
@@ -126,15 +126,15 @@ def _match_score(cand_tok, ref_tok):
 
 def _best_alignment(cand, ref):
     """
-    寻找最大化匹配的对齐方式
-    返回 (匹配数, 块数)
+    Find alignment that maximizes matches.
+    Returns (matches, chunks).
     """
     best_m = best_chunks = 0
     n = len(cand)
     r = len(ref)
     cand_idx = list(range(n))
     
-    # 对长参考文本使用贪心算法
+    # Use greedy for long reference texts
     perms = [range(min(n, r))] if r > 10 else permutations(range(r), min(n, r))
 
     for ref_order in perms:
@@ -152,7 +152,7 @@ def _best_alignment(cand, ref):
         if m == 0:
             continue
 
-        # 块 = 参考顺序中的连续匹配
+        # Chunks = contiguous matches in ref order
         matched.sort(key=lambda x: x[0])
         chunks = 1
         for k in range(1, m):
@@ -166,14 +166,8 @@ def _best_alignment(cand, ref):
 
 def meteor_score(candidate, reference, alpha=0.9, beta=3.0, gamma=0.5):
     """
-    计算METEOR分数 (Banerjee & Lavie, 2005的默认参数)
-    
-    参数:
-    candidate : str
-    reference : str
-    
-    返回:
-    float in [0, 1]
+    Compute METEOR (default params from Banerjee & Lavie, 2005).
+    Args: candidate (str), reference (str). Returns: float in [0, 1].
     """
     cand_tok = _tokens(candidate)
     ref_tok = _tokens(reference)
@@ -189,7 +183,7 @@ def meteor_score(candidate, reference, alpha=0.9, beta=3.0, gamma=0.5):
     penalty = gamma * (chunks / m) ** beta
     return f_mean * (1 - penalty)
 
-# 配置日志
+# Configure logging
 logging.getLogger("httpx").setLevel(logging.WARNING)
 logging.basicConfig(
     level=logging.INFO,
@@ -197,17 +191,17 @@ logging.basicConfig(
     handlers=[logging.StreamHandler()]
 )
 
-# 初始化配置
+# Initialize config
 config = Configuration()
 init_config(config=config)
 module_factory = ModuleFactory(config)
 
-# 明确使用Qwen3模型
+# Use Qwen3 model
 llm = QwenLLM(model_name="Qwen/Qwen3-14B")
 
-logging.info("Qwen3-14B模型初始化成功")
+logging.info("Qwen3-14B model initialized")
 
-# 任务配置
+# Task config
 
 # task = "abstract"
 # test_dir = "./data/Longlamp/abstract/test"
@@ -230,7 +224,7 @@ all_scores = []
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 jsonl_path = f"evaluation_Qwen3_14B_{task}_{timestamp}.jsonl"
 
-# 处理每个作者目录
+# Process each author directory
 with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
     for author_dir in os.listdir(test_dir):
         # print("-------------")
@@ -254,7 +248,7 @@ with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
             continue
             
         try:
-            logging.info(f"处理作者: {author_dir}")
+            logging.info(f"Processing author: {author_dir}")
             kb_path = os.path.join(author_path, "knowledge_base")
 
 
@@ -262,55 +256,55 @@ with open(jsonl_path, 'w', encoding='utf-8') as jsonl_file:
             from deepsearcher.offline_loading import load_from_local_files
 
 
-            # 加载个性化知识库
+            # Load personalized knowledge base
             load_from_local_files(paths_or_directory=kb_path, collection_name = f"personalized_knowledge",
                                 collection_description = "A collection of user expert knowledge, including writing notes, and answers to some certain questions.")
 
             personalized_understanding(paths_or_directory=kb_path, llm=llm)
-            logging.info("个性化知识库加载和理解完成")
+            logging.info("Personalized knowledge base loaded")
             
-            # 读取输入
+            # Read input
             with open(author_path+'/input.txt', 'r', encoding='utf-8') as f:
                 input_query = f.read()
             
-            # 执行查询
+            # Run query
             result = query(original_query=input_query, max_iter=1, personalized_info_address=kb_path+ "/personalized_summary.json")[0]
             sample_result["generation"] = result
             
-            # 读取真实结果
+            # Read ground truth
             with open(author_path+'/output.txt', 'r', encoding='utf-8') as f:
                 ground_truth = f.read()
             sample_result["ground_truth"] = ground_truth
             
-            # 计算分数
+            # Compute scores
             scores = calc_single_score(result, ground_truth)
             sample_result["scores"] = scores
             sample_result["success"] = True
             
-            # 收集结果
+            # Collect results
             results.append(result)
             ground_truths.append(ground_truth)
             all_scores.append(scores)
             
-            logging.info(f"分数计算完成: ROUGE-L={scores['rougeL']:.4f}, METEOR={scores['meteor']:.4f}")
+            logging.info(f"Scores computed: ROUGE-L={scores['rougeL']:.4f}, METEOR={scores['meteor']:.4f}")
             
         except Exception as e:
             error_msg = f"{type(e).__name__}: {str(e)}"
             sample_result["error"] = error_msg
-            logging.error(f"处理 {author_dir} 时出错: {error_msg}")
+            logging.error(f"Error processing {author_dir}: {error_msg}")
             traceback.print_exc()
         
         finally:
-            # 写入JSONL记录
+            # Write JSONL record
             jsonl_file.write(json.dumps(sample_result, ensure_ascii=False) + '\n')
             jsonl_file.flush()
 
-# 计算最终分数
+# Compute final scores
 if results and ground_truths:
     final_scores = calc_final_scores(results, ground_truths)
-    logging.info("最终分数计算完成")
+    logging.info("Final scores computed")
     
-    # 添加最终分数记录
+    # Add final score record
     final_record = {
         "type": "final_scores",
         "task": task,
@@ -322,15 +316,15 @@ if results and ground_truths:
     with open(jsonl_path, 'a', encoding='utf-8') as jsonl_file:
         jsonl_file.write(json.dumps(final_record, ensure_ascii=False) + '\n')
     
-    # 打印最终结果
-    print("\n============== 最终结果 ==============")
+    # Print final results
+    print("\n============== Final Results ==============")
     for metric, score in final_scores.items():
         print(f"{metric.upper()}: {score:.4f}")
     print("=" * 40)
 else:
-    logging.warning("没有有效样本可计算最终分数")
+    logging.warning("No valid samples for final scoring")
 
-print(f"\n评估结果已保存至: {os.path.abspath(jsonl_path)}")
+print(f"\nEvaluation results saved to: {os.path.abspath(jsonl_path)}")
 
 
 

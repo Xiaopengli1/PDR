@@ -83,7 +83,7 @@ def read_modified_files(folder_path: str, snapshot_path: str = 'file_snapshot.js
                     content = pdf_loader.load_file(file_path).__str__()
                 contents.append(content)
             except Exception as e:
-                print(f"无法读取文件 {file_path}: {e}")
+                print(f"Failed to read file {file_path}: {e}")
 
     return "\n\n".join(contents)
 
@@ -103,19 +103,19 @@ def personalized_understanding(paths_or_directory: Union[str, List[str]], llm: B
 
     if os.path.exists(summary_path):
         try:
-            # 尝试读取现有文件内容
+            # Try to read existing file content
             with open(summary_path, 'r', encoding='utf-8') as file:
                 parsed_response = json.load(file)
             
-            # 构造模拟响应
+            # Build mock response
             mock_response = f"<output>{json.dumps(parsed_response)}</output>"
-            log.color_print(f"⏩ 使用缓存摘要: {summary_path}")
+            log.color_print(f"⏩ Using cached summary: {summary_path}")
             log.color_print(f"<personal summary> {parsed_response} </personal summary>\n")
             
-            # 返回模拟结果（token消耗设为0）
+            # Return mock result (token consumption set to 0)
             return mock_response, 0
         except Exception as e:
-            log.color_print(f"⚠️ 摘要文件损坏，将重新生成: {str(e)}")
+            log.color_print(f"⚠️ Summary file corrupted, regenerating: {str(e)}")
 
     all_text = read_modified_files(paths_or_directory)
 
@@ -131,7 +131,7 @@ def personalized_understanding(paths_or_directory: Union[str, List[str]], llm: B
     think_pattern = re.search(r'<think>(.*?)</think>', response_content, re.DOTALL)
     output_pattern = re.search(r'<output>(.*?)</output>', response_content, re.DOTALL)
 
-    # 提取匹配的内容
+    # Extract matched content
     think_content = think_pattern.group(1).strip() if think_pattern else None
     output_content = output_pattern.group(1).strip() if output_pattern else None
 

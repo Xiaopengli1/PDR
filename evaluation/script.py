@@ -34,10 +34,10 @@ for path in jsonl_files:
         open(out_path, "w", encoding="utf-8") as fout:
         for idx, line in enumerate(fin, 1):
             if not line.strip():
-                continue                          # 跳过空行
+                continue  # Skip empty lines
 
             try:
-                data = json.loads(line)           # 解析 JSON
+                data = json.loads(line)
                 gen_article  = data["generation"]
                 label_article = data["ground_truth"]
 
@@ -55,7 +55,7 @@ for path in jsonl_files:
 
 
                     match = re.search(r"```[a-zA-Z]*\s*(\{.*\})\s*```", resp, re.S)
-                    clean_json = match.group(1) if match else resp   # 如果没有包裹直接用原串
+                    clean_json = match.group(1) if match else resp
 
                     data_score = json.loads(clean_json)
 
@@ -68,8 +68,6 @@ for path in jsonl_files:
                 fout.write(json.dumps(data, ensure_ascii=False) + "\n")
 
             except Exception as e:
-                # ★ 出错就跳过，保留行号方便排查
-                print(f"[WARN] 第 {idx} 行处理失败：{e!r}")
-                # 想完全静默就把 print 去掉
+                print(f"[WARN] Line {idx} failed: {e!r}")
                 continue
     print("Evaluation complete.")

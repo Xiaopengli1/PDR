@@ -76,7 +76,7 @@ class CollectionRouter(BaseAgent):
         think_pattern = re.search(r'<think>(.*?)</think>', response_content, re.DOTALL)
         output_pattern = re.search(r'<output>(.*?)</output>', response_content, re.DOTALL)
 
-        # 提取匹配的内容
+        # Extract matched content
         think_content = think_pattern.group(1).strip() if think_pattern else None
         output_content = output_pattern.group(1).strip() if output_pattern else None
 

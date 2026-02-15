@@ -49,7 +49,7 @@ def load_from_local_files(
         collection_name = vector_db.default_collection
     collection_name = collection_name.replace(" ", "_").replace("-", "_")
 
-    # 每次加载个性化数据集先清空
+    # Clear personalized collection before each load
     if collection_name == "personalized_knowledge" and collection_name in vector_db.client.list_collections():
         print(vector_db.client.list_collections())
 

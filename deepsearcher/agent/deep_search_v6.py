@@ -398,7 +398,7 @@ class DeepSearch(RAGAgent):
                 - A list of retrieved document results
                 - The total token usage
         """
-        # Query 是入口，在这里重新生成类的个性化信息
+        # Query is the entry point; reload personalized info here
         with open(self.personalized_info_address, 'r', encoding='utf-8') as file:
             self.personalized_info = file.read()
 
@@ -445,21 +445,20 @@ class DeepSearch(RAGAgent):
 
     def extract_think_and_output(self, response_content):
         """
-        从响应内容中提取 <think> 和 <output> 标签内的内容
-        
-        参数:
-            response_content (str): 包含XML标签的原始文本内容
-            
-        返回:
-            tuple: (think_content, output_content) 
-                - think_content: <think>标签内的文本（无空白），未找到返回None
-                - output_content: <output>标签内的文本（无空白），未找到返回None
-        """
+        Extract content from <think> and <output> tags in the response.
 
+        Args:
+            response_content (str): Raw text containing XML tags.
+
+        Returns:
+            tuple: (think_content, output_content)
+                - think_content: Text inside <think> tag (stripped), None if not found
+                - output_content: Text inside <output> tag (stripped), None if not found
+        """
         think_pattern = re.search(r'<think>(.*?)</think>', response_content, re.DOTALL)
         output_pattern = re.search(r'<output>(.*?)</output>', response_content, re.DOTALL)
 
-        # 提取并清理内容
+        # Extract and clean content
         think_content = think_pattern.group(1).strip() if think_pattern else None
         output_content = output_pattern.group(1).strip() if output_pattern else None
 
