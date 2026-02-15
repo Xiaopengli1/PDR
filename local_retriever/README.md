@@ -1,8 +1,8 @@
-## Local Retriever Deployment
+# PDR Local Retriever
 
-We refer to https://github.com/PeterGriffinJin/Search-R1, which uses wiki as retrieval corpus and build a local retriever.
+Deploy a local retrieval server for PDR's public/external search stage. Based on [Search-R1](https://github.com/PeterGriffinJin/Search-R1).
 
-### Retriever Environment Install
+## Environment Setup
 ```python
 conda create -n retriever python=3.10
 conda activate retriever
@@ -18,10 +18,12 @@ conda install -c pytorch -c nvidia faiss-gpu=1.8.0
 pip install uvicorn fastapi
 ```
 
-### Launch Local Retrieval Server
-Launch a local retrieval server for external retrieval.
-```python
+## Launch
+
+From the project root:
+
+```bash
 conda activate retriever
-bash retrieval_launch.sh
+bash local_retriever/retrieval_launch.sh
 ```
 

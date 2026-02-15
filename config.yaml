@@ -1,3 +1,7 @@
+# PDR (Personalized Deep Research) Configuration
+# SIGIR '26 Resource Track - https://github.com/Xiaopengli1/PDR
+# Update API keys via environment variables or uncomment config overrides below.
+
 provide_settings:
   llm:
 #    provider: "OpenAI"

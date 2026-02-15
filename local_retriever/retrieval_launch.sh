@@ -1,3 +1,6 @@
+#!/bin/bash
+# PDR Local Retriever - launch public search server (FlashRAG wiki-18 / Search-R1)
+# Configure file_path, index_file, corpus_file for your corpus before running.
 
 file_path=/the/path/you/save/corpus
 index_file=$file_path/e5_Flat.index

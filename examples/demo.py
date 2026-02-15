@@ -1,5 +1,9 @@
+"""
+PDR Demo: Run personalized deep research on the PDR dataset.
+Outputs JSONL with ROUGE/METEOR scores for each sample. Use evaluation/script.py for LLM-as-judge.
+"""
 import os
-import json  # 添加json模块
+import json
 import logging
 import datetime
 import math

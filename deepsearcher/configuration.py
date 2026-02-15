@@ -20,11 +20,10 @@ FeatureType = Literal["llm", "embedding", "file_loader", "web_crawler", "vector_
 
 class Configuration:
     """
-    Configuration class for DeepSearcher.
+    Configuration class for PDR (Personalized Deep Research).
 
-    This class manages the configuration settings for various components of the DeepSearcher system,
-    including LLM providers, embedding models, file loaders, web crawlers, and vector databases.
-    It loads configurations from a YAML file and provides methods to get and set provider configurations.
+    Manages configuration for LLM providers, embeddings, file loaders,
+    web crawlers, and vector databases. Loads settings from config.yaml.
     """
 
     def __init__(self, config_path: str = DEFAULT_CONFIG_YAML_PATH):

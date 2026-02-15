@@ -1,3 +1,7 @@
+"""
+PDR (Personalized Deep Research) - A User-Centric Framework for Knowledge Discovery.
+SIGIR '26 Resource Track. https://github.com/Xiaopengli1/PDR
+"""
 from setuptools import find_packages, setup
 
 setup(
@@ -23,9 +27,6 @@ setup(
         "nltk",
         "pyyaml",
     ],
-    extras_require={
-        "figures": ["pymupdf"],
-    },
     entry_points={
         "console_scripts": ["deepsearcher=deepsearcher.cli:main"],
     },

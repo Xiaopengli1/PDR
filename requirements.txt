@@ -1,3 +1,4 @@
+# PDR Dependencies - https://github.com/Xiaopengli1/PDR
 argparse
 firecrawl-py
 langchain_text_splitters

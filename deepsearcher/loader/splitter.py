@@ -1,6 +1,7 @@
-## Sentence Window splitting strategy, ref:
-#  https://github.com/milvus-io/bootcamp/blob/master/bootcamp/RAG/advanced_rag/sentence_window_with_langchain.ipynb
-
+"""
+PDR Document Splitter: Chunk documents for retrieval.
+Sentence-window strategy; ref: Milvus RAG bootcamp.
+"""
 from typing import List
 
 from langchain_core.documents import Document

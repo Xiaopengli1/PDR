@@ -1,21 +1,24 @@
+"""
+PDR Online Query API - Personalized deep research query interface.
+"""
 from typing import List, Tuple
 
-# from deepsearcher.configuration import vector_db, embedding_model, llm
 from deepsearcher import configuration
 from deepsearcher.vector_db.base import RetrievalResult
 # from deepsearcher import DeepSearch
 
 
-def query(original_query: str, personalized_info_address: str, max_iter: int = 3 ) -> Tuple[str, List[RetrievalResult], int]:
+def query(original_query: str, personalized_info_address: str, max_iter: int = 3) -> Tuple[str, List[RetrievalResult], int]:
     """
-    Query the knowledge base with a question and get an answer.
+    Query the knowledge base with a personalized deep research request.
 
-    This function uses the default searcher to query the knowledge base and generate
-    an answer based on the retrieved information.
+    Uses the PDR searcher to query private and public sources, generating
+    an answer aligned with the user's profile.
 
     Args:
         original_query: The question or query to search for.
-        max_iter: Maximum number of iterations for the search process.
+        personalized_info_address: Path to the personalized profile JSON file.
+        max_iter: Maximum number of retrieval iterations.
 
     Returns:
         A tuple containing:

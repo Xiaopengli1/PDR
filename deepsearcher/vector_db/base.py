@@ -1,3 +1,6 @@
+"""
+PDR Vector DB: Base classes for retrieval and result types.
+"""
 from abc import ABC, abstractmethod
 from typing import List, Union
 

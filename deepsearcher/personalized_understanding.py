@@ -1,3 +1,7 @@
+"""
+PDR Profile Extraction: Build structured user profiles from heterogeneous sources.
+Transforms drafts, notes, and documents into JSON profiles for downstream personalization.
+"""
 import os
 import re
 import json

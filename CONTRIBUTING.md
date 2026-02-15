@@ -1,12 +1,12 @@
-# Contributing to DeepSearcher
+# Contributing to PDR
 
-Contributions to DeepSearcher are welcome from everyone. We strive to make the contribution process simple and straightforward.
+Contributions to PDR (Personalized Deep Research) are welcome. We strive to make the contribution process simple and straightforward.
 
-The following are a set of guidelines for contributing to DeepSearcher. Following these guidelines makes contributing to this project easy and transparent. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following are guidelines for contributing to PDR. Following these guidelines makes contributing to this project easy and transparent. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 **Content**
 
-- [Contributing to DeepSearcher](#contributing-to-deepsearcher)  
+- [Contributing to PDR](#contributing-to-pdr)  
   - [How can you contribute?](#how-can-you-contribute)  
     - [Contributing code](#contributing-code)  
     - [GitHub workflow](#github-workflow)  
@@ -44,7 +44,7 @@ The following are a set of guidelines for contributing to DeepSearcher. Followin
 - Participate in PR review process.
 - Instruct newcomers in the community to complete the PR process.
 
-If you want to become a contributor of DeepSearcher, submit your pull requests! For those just getting started, see [GitHub workflow](#github-workflow) below.
+If you want to become a contributor of PDR, submit your pull requests! For those just getting started, see [GitHub workflow](#github-workflow) below.
 
 All submissions will be reviewed as quickly as possible.
 There will be a reviewer to review the codes, and an approver to review everything aside the codes.
@@ -56,7 +56,7 @@ Once the 2 labels are on your PR, and all actions pass, your PR will be merged i
 Generally, we follow the "fork-and-pull" Git workflow.
 
 1.  [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the repository on GitHub.
-2.  Clone your fork to your local machine with `git clone git@github.com:<yourname>/deep-searcher.git`.
+2.  Clone your fork locally: `git clone git@github.com:<yourname>/PDR.git`.
 3.  Create a branch with `git checkout -b my-topic-branch`.
 4.  [Commit](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/committing-changes-to-a-pull-request-branch-created-from-a-fork) changes to your own branch, then push to GitHub with `git push origin my-topic-branch`.
 5.  Submit a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) so that we can review your changes.
@@ -64,7 +64,7 @@ Generally, we follow the "fork-and-pull" Git workflow.
 Remember to [sync your forked repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#keep-your-fork-synced) _before_ submitting proposed changes upstream. If you have an existing local repository, please update it before you start, to minimize the chance of merge conflicts.
 
 ```shell
-git remote add upstream git@github.com:zilliztech/deep-searcher.git
+git remote add upstream git@github.com:Xiaopengli1/PDR.git
 git fetch upstream
 git checkout upstream/master -b my-topic-branch
 ```

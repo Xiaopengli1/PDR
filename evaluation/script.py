@@ -1,11 +1,30 @@
-
+"""
+PDR-Eval Script: Run LLM-as-Judge evaluation on JSONL outputs from examples/demo.py.
+Requires: openai-compatible client, evaluation_prompt from this package.
+"""
+import os
 import re
 import json
 from pathlib import Path
 
+try:
+    from evaluation.evaluation_prompt import generate_static_score_prompt
+except ImportError:
+    from evaluation_prompt import generate_static_score_prompt
 
-jsonl_files = list(Path('.').glob('*.jsonl'))
+# Initialize LLM client (OpenAI-compatible API). Set DEEPSEEK_API_KEY or configure below.
+try:
+    from openai import OpenAI
+    client = OpenAI(api_key=os.environ.get("DEEPSEEK_API_KEY", ""), base_url="https://api.deepseek.com")
+except Exception:
+    client = None  # Set client before running if the above fails.
 
+jsonl_files = list(Path(".").glob("*.jsonl")) or list(Path("..").glob("*.jsonl"))
+
+if not client:
+    raise RuntimeError(
+        "LLM client not initialized. Set DEEPSEEK_API_KEY or configure OpenAI-compatible client in script."
+    )
 
 for path in jsonl_files:
     in_path = str(path)
@@ -22,11 +41,13 @@ for path in jsonl_files:
                 gen_article  = data["generation"]
                 label_article = data["ground_truth"]
 
-                if gen_article and label_article :
-
+                if gen_article and label_article:
+                    prompt = generate_static_score_prompt.format(
+                        gen_article=gen_article, label_article=label_article
+                    )
                     resp = client.chat.completions.create(
                         model="deepseek-reasoner",
-                        messages=[{"role": "user", "content":generate_static_score_prompt}]
+                        messages=[{"role": "user", "content": prompt}],
                     )
                     resp = resp.choices[0].message.content
 
@@ -51,6 +72,4 @@ for path in jsonl_files:
                 print(f"[WARN] 第 {idx} 行处理失败：{e!r}")
                 # 想完全静默就把 print 去掉
                 continue
-        break
-
-    print("处理完毕。")
+    print("Evaluation complete.")

@@ -1,5 +1,7 @@
 # PDR — Personalized Deep Research
 
+> **SIGIR '26 Resource Track** | [Paper](https://github.com/Xiaopengli1/PDR) | [Dataset](https://drive.google.com/drive/folders/1VMFTtDw_OV4kRjuzppEK_7rGCB7IiP3N)
+
 <p align="center">
   <strong>A User-Centric Framework, Dataset, and Hybrid Evaluation for Knowledge Discovery</strong>
 </p>

@@ -1,3 +1,6 @@
+"""
+PDR logging utilities: Colored console output and configurable log levels.
+"""
 import logging
 
 from termcolor import colored

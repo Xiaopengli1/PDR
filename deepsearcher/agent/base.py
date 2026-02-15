@@ -27,10 +27,9 @@ def describe_class(description):
 
 class BaseAgent(ABC):
     """
-    Abstract base class for all agents in the DeepSearcher system.
+    Abstract base class for PDR agents.
 
-    This class defines the basic interface for agents, including initialization
-    and invocation methods.
+    Defines the interface for RAG agents including initialization and invocation.
     """
 
     def __init__(self, **kwargs):

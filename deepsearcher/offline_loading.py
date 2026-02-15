@@ -1,3 +1,7 @@
+"""
+PDR Offline Loading: Load local knowledge bases into the vector store for retrieval.
+Supports PDF, JSON, text; used for private/user-specific document indexing.
+"""
 import os
 from typing import List, Union
 

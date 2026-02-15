@@ -1,3 +1,8 @@
+"""
+PDR-Eval: LLM-as-Judge evaluation prompts for PDR report quality assessment.
+Evaluates Comprehensiveness, Readability, Content Personalization, Presentation Personalization.
+"""
+
 generate_static_score_prompt = """
 <system_role>You are a strict, meticulous, and objective research-article evaluation expert. You excel at assigning precise scores and providing clear justifications for a given report.</system_role>
 
